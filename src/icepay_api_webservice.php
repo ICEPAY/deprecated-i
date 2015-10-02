@@ -217,7 +217,7 @@ class Icepay_Webservice_Base extends Icepay_Api_Base {
      */
     protected function getIP()
     {
-        return $_SERVER['REMOTE_ADDR'];
+        return isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0';
     }
 
     /**
