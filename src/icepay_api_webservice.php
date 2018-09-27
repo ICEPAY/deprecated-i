@@ -182,7 +182,6 @@ class Icepay_Webservice_Base extends Icepay_Api_Base {
 
         $soapArguments = array(
             'location' => $this->service,
-            'encoding' => 'UTF-8',
             'cache_wsdl' => 'WSDL_CACHE_NONE',
             'stream_context' => stream_context_create($sslContext)
         );
